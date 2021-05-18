@@ -8,8 +8,10 @@ import 'package:json_serialization_2021/models/movie_model.dart';
 class MovieService {
   String authority = "api.themoviedb.org";
   String path = "/3/movie/popular";
+  
+   // Bearer access token => follow video tutorial without skiping
   String authorization =
-      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxYTVlYmVmNThiMDhhZDgyNWYyNDU5MTg2MGIyNjk5MCIsInN1YiI6IjYwYTM1OTI2NzMxNGExMDA3OGZjZTRkOCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.VJG0GMDEpcYQBtm5VZlCHEmqTY5jH4kfIkYhosKqOA0";
+      "Bearer  <<access_token>>";
   var client = http.Client();
   List<MovieModel> movies = [];
 
@@ -19,7 +21,8 @@ class MovieService {
       };
 
   Map<String, dynamic> queryParma = {
-    "api_key": "1a5ebef58b08ad825f24591860b26990"
+    // api_key access token => follow video tutorial without skiping
+    "api_key": " <<api_key>>"
   };
 
   Future<List<MovieModel>> getMovies() async {

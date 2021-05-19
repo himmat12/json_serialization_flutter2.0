@@ -4,6 +4,6 @@
 
 **API:** [The Movie DB](https://www.themoviedb.org/documentation/api)
 
-a flutter project which parse & serialize JSON API response into dart model classes with build runner & JSON serializable library package 
+a flutter project which parse & serialize JSON API response into dart model classes with build runner & JSON serializable library package in code generation way
 
-[Youtube Tutorial]()
+[Youtube Tutorial](https://youtu.be/9iVxVQVjMEc)
